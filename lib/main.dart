@@ -1,8 +1,15 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:mathspuzzel/splash_screen/splash_screen.dart';
 
 main() {
-  runApp(GetMaterialApp(
-    home: Maths_Puzzel_Game(),
-  ));
+  runApp(
+    GetMaterialApp(
+      home: const SplashScreen(),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        useMaterial3: true,
+      ),
+    ),
+  );
 }
